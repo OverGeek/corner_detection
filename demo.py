@@ -130,7 +130,7 @@ def main():
             for (a, b), s in zip(nlines, nscores):
                 if s < t:
                     continue
-                plt.plot([a[1], b[1]], [a[0], b[0]], c=c(s), linewidth=2, zorder=s)
+                #plt.plot([a[1], b[1]], [a[0], b[0]], c=c(s), linewidth=2, zorder=s)
                 plt.scatter(a[1], a[0], **PLTOPTS)
                 plt.scatter(b[1], b[0], **PLTOPTS)
             plt.gca().xaxis.set_major_locator(plt.NullLocator())
